@@ -1,0 +1,199 @@
+/* Reset e padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #EBE5E5;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #EBE5E5;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    padding: 20px 90px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 120px;
+    list-style: none;
+}
+
+.navbar li {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.header-img {
+    width: 100%;
+   
+    object-fit: cover;
+}
+
+.decoracao-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limite de largura se necessário */
+}
+
+.poste-esquerdo,
+.poste-direito {
+    margin-left: 40px;  /* Aumente o valor conforme necessário */
+    margin-right: 40px; /* Aumente o valor conforme necessário */
+    flex-shrink: 0;     /* Impede que os postes encolham */
+}
+
+.texto-banner {
+    color: white;
+    text-align: center;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
+    gap: 10px; /* Espaçamento entre os elementos de texto */
+}
+
+.titulo-banner {
+    font-size: 45px;
+    
+}
+
+h1 {
+    font-family: 'Battambang', sans-serif;
+}
+
+.descricao-banner {
+    padding-top: 110px;
+    font-size: large;
+    gap: 100px;
+    font-weight: 700;
+}
+
+
+.titulo-banner {
+    margin-bottom: -20px;  /* Se necessário, ajuste para mover o título para cima */
+}
+
+
+
+.btn-agende {
+    background-color: #D2212D;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 19px;
+    font-size: large;
+}
+
+/* Seção Preços */
+.precos {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    margin-top: 90px;
+    background-image: url('/src/images/Group\ 5.png'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover;  /* Faz com que a imagem cubra toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    height: 450px;
+    padding-right: 90px;
+}
+
+.precos h2 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.precos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.precos ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.precos-conteudo  {
+    margin-left: 29%;
+}
+
+
+
+.preco-conteudo ul {
+    list-style: none;
+}
+
+
+
+.imagem-barbearia img {
+    width: 95%;
+    margin-top: -65px;
+
+}
+
+/* Seção Localização */
+.localizacao {
+    margin-top: 90px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.map-placeholder {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0C0C0C;
+    color: white;
+    padding: 20px;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-uteis ul {
+    list-style: none;
+}
+
+.links-uteis li {
+    margin: 5px 0;
+    cursor: pointer;
+}
